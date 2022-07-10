@@ -96,3 +96,5 @@ fs.watchFile(editedFilesPath, (curr, prev) => {
 });
 
 console.log("Auto Reloader started with:\n" + JSON.stringify(options, null, 2));
+console.log("WebSocket server started on port " + options.wsport);
+console.log(`Use /connect localhost:${options.wsport} to connect ingame`);

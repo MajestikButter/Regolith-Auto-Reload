@@ -9,7 +9,6 @@
   "author": "MajestikButter",
   "license": "ISC",
   "dependencies": {
-    "regolith-auto-reload": "github:MajestikButter/Regolith-Auto-Reload",
     "ws": "^8.8.0",
     "yargs": "^17.5.1"
   },
