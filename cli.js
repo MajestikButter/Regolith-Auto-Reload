@@ -1,10 +1,15 @@
+#!/usr/bin/env node
+
+if (require.main != module)
+  throw new Error("This file is not meant to be run directly");
+
 const fs = require("fs");
 const WebSocket = require("ws");
 const crypto = require("crypto");
 
 const yargs = require("yargs");
 
-const argv = yargs(process.argv.slice(2))
+const argv = yargs
   .option("regolithpath", {
     alias: "rp",
     description: "Set the regolith path",

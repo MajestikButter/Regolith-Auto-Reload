@@ -2,14 +2,18 @@
   "name": "regolith-auto-reload",
   "version": "1.0.0",
   "description": "Automatically run /reload ingame when regolith is ran by connecting to a websocket",
-  "main": "index.js",
+  "main": "cli.js",
   "scripts": {
-    "test": "node index.js -rp .regolith -wsp 8080"
+    "test": "node cli.js -rp .regolith -wsp 8080"
   },
   "author": "MajestikButter",
   "license": "ISC",
   "dependencies": {
+    "regolith-auto-reload": "github:MajestikButter/Regolith-Auto-Reload",
     "ws": "^8.8.0",
     "yargs": "^17.5.1"
+  },
+  "bin": {
+    "regolith-reload": "./cli.js"
   }
 }
